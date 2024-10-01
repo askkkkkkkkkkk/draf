@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundraising for Sitio Bebe</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5dc; /* Beige background */
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .container {
+            text-align: center;
+            color: black; /* Ensure text is visible */
+            max-width: 800px;
+            z-index: 10; /* Ensure text is above flowers and butterfly */
+            position: relative;
+            background: rgba(255, 255, 255, 0.8); /* Optional: semi-transparent background for better readability */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        /* Butterfly Animation */
+        .butterfly {
+            position: absolute;
+            width: 150px; /* Enlarged butterfly */
+            height: 150px;
+            z-index: 5; /* Below text, above flowers */
+            animation: fly 10s linear infinite;
+        }
+
+        @keyframes fly {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(200px, -150px); }
+            50% { transform: translate(400px, 0); }
+            75% { transform: translate(200px, 150px); }
+            100% { transform: translate(0, 0); }
+        }
+
+        /* Dripping Flower Animation */
+        .flower {
+            position: absolute;
+            width: 40px;
+            top: 10px;
+            z-index: 1; /* Ensure flowers are in the background */
+            animation: drip 2s infinite alternate;
+        }
+
+        @keyframes drip {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(10px); }
+        }
+
+        /* Flower Positions */
+        .flower:nth-child(1) { left: 5%; }
+        .flower:nth-child(2) { left: 15%; }
+        .flower:nth-child(3) { left: 25%; }
+        .flower:nth-child(4) { left: 35%; }
+        .flower:nth-child(5) { left: 45%; }
+        .flower:nth-child(6) { left: 55%; }
+        .flower:nth-child(7) { left: 65%; }
+        .flower:nth-child(8) { left: 75%; }
+        .flower:nth-child(9) { left: 85%; }
+
+        /* Button Styling */
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: #1E88E5;
+            background-color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #f1f1f1;
+            transform: scale(1.05);
+        }
+
+        /* Additional styling for group description */
+        .group-description {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: black; /* Dark text */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 9 Dripping Flowers -->
+    <!-- Flower 1 -->
+    <svg class="flower" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path fill="pink" d="M12 2C10.34 2 9 3.34 9 5c0 1.03.58 2.18 1.5 3.1C10.09 9.67 9 11.29 9 13c0 2.76 2.24 5 5 5s5-2.24 5-5c0-1.71-1.09-3.33-2.5-4.9C14.42 7.18 15 6.03 15 5c0-1.66-1.34-3-3-3z"/>
+    </svg>
+    <!-- Flower 2 -->
+    <svg class="flower" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path fill="pink" d="M12 2C10.34 2 9 3.34 9 5c0 1.03.58 2.18 1.5 3.1C10.09 9.67 9 11.29 9 13c0 2.76 2.24 5 5 5s5-2.24 5-5c0-1.71-1.09-3.33-2.5-4.9C14.42 7.18 15 6.03 15 5c0-1.66-1.34-3-3-3z"/>
+    </svg>
+    <!-- Flower 3 -->
+    <svg class="flower" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path fill="pink" d="M12 2C10.34 2 9 3.34 9 5c0 1.03.58 2.18 1.5 3.1C10.09 9.67 9 11.29 9 13c0 2.76 2.24 5 5 5s5-2.24 5-5c0-1.71-1.09-3.33-2.5-4.9C14.42 7.18 15 6.03 15 5c0-1.66-1.34-3-3-3z"/>
+    </svg>
+    <!-- Flower 4 -->
+    <svg class="flower" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path fill="pink" d="M12 2C10.34 2 9 3.34 9 5c0 1.03.58 2.18 1.5 3.1C10.09 9.67 9 11.29 9 13c0 2.76 2.24 5 5 5s5-2.24 5-5c0-1.71-1.09-3.33-2.5-4.9C14.42 7.18 15 6.03 15 5c0-1.66-1.34-3-3-3z"/>
+    </svg>
+    <!-- Flower 5 -->
+    <svg class="flower" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path fill="pink" d="M12 2C10.34 2 9 3.34 9 5c0 1.03.58 2.18 1.5 3.1C10.09 9.67 9 11.29 9 13c0 2.76 2.24 5 5 5s5-2.24 5-5c0-1.71-1.09-3.33-2.5-4.9C14.42 7.18 15 6.03 15 5c0-1.66-1.34-3-3-3z"/>
+    </svg>
+    <!-- Flower 6 -->
+    <svg class="flower" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path fill="pink" d="M12 2C10.34 2 9 3.34 9 5c0 1.03.58 2.18 1.5 3.1C10.09 9.67 9 11.29 9 13c0 2.76 2.24 5 5 5s5-2.24 5-5c0-1.71-1.09-3.33-2.5-4.9C14.42 7.18 15 6.03 15 5c0-1.66-1.34-3-3-3z"/>
+    </svg>
+    <!-- Flower 7 -->
+    <svg class="flower" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path fill="pink" d="M12 2C10.34 2 9 3.34 9 5c0 1.03.58 2.18 1.5 3.1C10.09 9.67 9 11.29 9 13c0 2.76 2.24 5 5 5s5-2.24 5-5c0-1.71-1.09-3.33-2.5-4.9C14.42 7.18 15 6.03 15 5c0-1.66-1.34-3-3-3z"/>
+    </svg>
+    <!-- Flower 8 -->
+    <svg class="flower" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path fill="pink" d="M12 2C10.34 2 9 3.34 9 5c0 1.03.58 2.18 1.5 3.1C10.09 9.67 9 11.29 9 13c0 2.76 2.24 5 5 5s5-2.24 5-5c0-1.71-1.09-3.33-2.5-4.9C14.42 7.18 15 6.03 15 5c0-1.66-1.34-3-3-3z"/>
+    </svg>
+    <!-- Flower 9 -->
+    <svg class="flower" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path fill="pink" d="M12 2C10.34 2 9 3.34 9 5c0 1.03.58 2.18 1.5 3.1C10.09 9.67 9 11.29 9 13c0 2.76 2.24 5 5 5s5-2.24 5-5c0-1.71-1.09-3.33-2.5-4.9C14.42 7.18 15 6.03 15 5c0-1.66-1.34-3-3-3z"/>
+    </svg>
+
+    <!-- Butterfly SVG -->
+    <svg class="butterfly" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path fill="black" d="M12 2C10.34 2 9 3.34 9 5c0 1.03.58 2.18 1.5 3.1C10.09 9.67 9 11.29 9 13c0 2.76 2.24 5 5 5s5-2.24 5-5c0-1.71-1.09-3.33-2.5-4.9C14.42 7.18 15 6.03 15 5c0-1.66-1.34-3-3-3z"/>
+    </svg>
+
+    <!-- Main content -->
+    <div class="container" id="mainPage">
+        <h1>Welcome to Fundraising for Sitio Bebe</h1>
+        <p>Grup 6, ONLINE 9-1 S2</p>
+        <button class="btn" onclick="goToNextPage()">Get Started</button>
+    </div>
+
+    <!-- Next Page with YouTube Channel Setup -->
+    <div class="container" id="nextPage" style="display:none;">
+        <h1>YouTube Channel Setup</h1>
+        <p><strong>Why We Need to Address This:</strong> In Sitio Bebe, we need to address the lack of access to clean water, healthcare professionals, and essential health resources. Our YouTube channel can become a platform for raising awareness, sharing stories of resilience, and inspiring viewers to donate to support these needs. We can create videos showcasing the challenges faced by the community, highlighting the impact of clean water access and healthcare, and providing practical ways for viewers to contribute. By focusing on empathy and action, we can empower viewers to make a difference for Sitio Bebe.</p>
+
+        <ul>
+            <li>Choosing a compelling channel name that reflects our mission.</li>
+            <li>Creating a visually appealing channel banner and profile picture.</li>
+            <li>Writing a clear and concise channel description that outlines our goals and target audience.</li>
+        </ul>
+
+        <button class="btn" onclick="goToContentCreation()">Next: Content Creation</button>
+    </div>
+
+    <!-- Content Creation Page -->
+    <div class="container" id="contentCreationPage" style="display:none;">
+        <h1>Content Creation</h1>
+        <ul>
+            <li>Brainstorming specific video ideas based on the content types we discussed.</li>
+            <li>Planning video scripts and gathering any necessary resources.</li>
+            <li>Recording initial videos and experimenting with editing styles.</li>
+        </ul>
+        <button class="btn" onclick="goToMarketing()">Next: Marketing and Promotion</button>
+    </div>
+
+    <!-- Marketing and Promotion Page -->
+    <div class="container" id="marketingPage" style="display:none;">
+        <h1>Marketing and Promotion</h1>
+        <ul>
+            <li>Creating a social media strategy to promote our channel.</li>
+            <li>Sharing videos on relevant online communities and forums.</li>
+        </ul>
+        <button class="btn" onclick="goBack()">Back to Home</button>
+    </div>
+
+    <script>
+        function goToNextPage() {
+            document.getElementById('mainPage').style.display = 'none';
+            document.getElementById('nextPage').style.display = 'block';
+        }
+
+        function goToContentCreation() {
+            document.getElementById('nextPage').style.display = 'none';
+            document.getElementById('contentCreationPage').style.display = 'block';
+        }
+
+        function goToMarketing() {
+            document.getElementById('contentCreationPage').style.display = 'none';
+            document.getElementById('marketingPage').style.display = 'block';
+        }
+
+        function goBack() {
+            document.getElementById('marketingPage').style.display = 'none';
+            document.getElementById('mainPage').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
